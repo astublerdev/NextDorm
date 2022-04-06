@@ -112,9 +112,9 @@ Check back soon
 * Roommate Profile - Anna
 
 ### Tentative Schedule
-Design Week 1
-Design Week 2
-Create user account
-User can log into account
-User can view different feeds
-User can create posts
+* Design Week 1
+* Design Week 2
+* Create user account
+* User can log into account
+* User can view different feeds
+* User can create posts
