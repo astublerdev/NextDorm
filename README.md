@@ -114,7 +114,7 @@ Check back soon
 ### Tentative Schedule
 Design Week 1
 Design Week 2
-Build Week 1
-Build Week 2
-Build Week 3
-Build Week 4
+Create user account
+User can log into account
+User can view different feeds
+User can create posts
