@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14748BC74E56A0981AC6DBE4 /* Pods_NextDorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E25D14F002A9818181B44A9 /* Pods_NextDorm.framework */; };
+		1514FE5BA531E2998AF9CF8B /* Pods_NextDormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460527C7E847F1370502B0B /* Pods_NextDormTests.framework */; };
+		1D59C52628021421009E40B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59C52528021421009E40B0 /* LoginViewController.swift */; };
+		1D59C52828021440009E40B0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59C52728021440009E40B0 /* FeedViewController.swift */; };
 		B42B5E0827FA119A00DFCC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E0727FA119A00DFCC69 /* AppDelegate.swift */; };
 		B42B5E0A27FA119A00DFCC69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E0927FA119A00DFCC69 /* SceneDelegate.swift */; };
-		B42B5E0C27FA119A00DFCC69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E0B27FA119A00DFCC69 /* ViewController.swift */; };
 		B42B5E0F27FA119A00DFCC69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42B5E0D27FA119A00DFCC69 /* Main.storyboard */; };
 		B42B5E1127FA119E00DFCC69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42B5E1027FA119E00DFCC69 /* Assets.xcassets */; };
 		B42B5E1427FA119E00DFCC69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42B5E1227FA119E00DFCC69 /* LaunchScreen.storyboard */; };
 		B42B5E1F27FA119E00DFCC69 /* NextDormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E1E27FA119E00DFCC69 /* NextDormTests.swift */; };
 		B42B5E2927FA119F00DFCC69 /* NextDormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E2827FA119F00DFCC69 /* NextDormUITests.swift */; };
 		B42B5E2B27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E2A27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift */; };
+		CBC7C0C5D5F84B0BCCAC14B4 /* Pods_NextDorm_NextDormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB14E81147CFB0C955727885 /* Pods_NextDorm_NextDormUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08F1F5014D154CE1FF7C0409 /* Pods-NextDormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDormTests.debug.xcconfig"; path = "Target Support Files/Pods-NextDormTests/Pods-NextDormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D59C52528021421009E40B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1D59C52728021440009E40B0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		4460527C7E847F1370502B0B /* Pods_NextDormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextDormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5395987E1463B45D795778B8 /* Pods-NextDormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDormTests.release.xcconfig"; path = "Target Support Files/Pods-NextDormTests/Pods-NextDormTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D6CFA58AE25B691C0F80C24 /* Pods-NextDorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm.debug.xcconfig"; path = "Target Support Files/Pods-NextDorm/Pods-NextDorm.debug.xcconfig"; sourceTree = "<group>"; };
+		7E25D14F002A9818181B44A9 /* Pods_NextDorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextDorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42B5E0427FA119A00DFCC69 /* NextDorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextDorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42B5E0727FA119A00DFCC69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B42B5E0927FA119A00DFCC69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B42B5E0B27FA119A00DFCC69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B42B5E0E27FA119A00DFCC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B42B5E1027FA119E00DFCC69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42B5E1327FA119E00DFCC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		B42B5E2427FA119F00DFCC69 /* NextDormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextDormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42B5E2827FA119F00DFCC69 /* NextDormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDormUITests.swift; sourceTree = "<group>"; };
 		B42B5E2A27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDormUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8538D4311291B440F6EEDF3 /* Pods-NextDorm-NextDormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm-NextDormUITests.release.xcconfig"; path = "Target Support Files/Pods-NextDorm-NextDormUITests/Pods-NextDorm-NextDormUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9E28669688DD9B899702A82 /* Pods-NextDorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm.release.xcconfig"; path = "Target Support Files/Pods-NextDorm/Pods-NextDorm.release.xcconfig"; sourceTree = "<group>"; };
+		EB14E81147CFB0C955727885 /* Pods_NextDorm_NextDormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextDorm_NextDormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64020014F1E77F8A1430313 /* Pods-NextDorm-NextDormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm-NextDormUITests.debug.xcconfig"; path = "Target Support Files/Pods-NextDorm-NextDormUITests/Pods-NextDorm-NextDormUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14748BC74E56A0981AC6DBE4 /* Pods_NextDorm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1514FE5BA531E2998AF9CF8B /* Pods_NextDormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC7C0C5D5F84B0BCCAC14B4 /* Pods_NextDorm_NextDormUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF6C15DF16A9F0A116D3E4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E25D14F002A9818181B44A9 /* Pods_NextDorm.framework */,
+				EB14E81147CFB0C955727885 /* Pods_NextDorm_NextDormUITests.framework */,
+				4460527C7E847F1370502B0B /* Pods_NextDormTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F330F5C2DA951EC53600099 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D6CFA58AE25B691C0F80C24 /* Pods-NextDorm.debug.xcconfig */,
+				C9E28669688DD9B899702A82 /* Pods-NextDorm.release.xcconfig */,
+				F64020014F1E77F8A1430313 /* Pods-NextDorm-NextDormUITests.debug.xcconfig */,
+				B8538D4311291B440F6EEDF3 /* Pods-NextDorm-NextDormUITests.release.xcconfig */,
+				08F1F5014D154CE1FF7C0409 /* Pods-NextDormTests.debug.xcconfig */,
+				5395987E1463B45D795778B8 /* Pods-NextDormTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B42B5DFB27FA119A00DFCC69 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +123,8 @@
 				B42B5E1D27FA119E00DFCC69 /* NextDormTests */,
 				B42B5E2727FA119F00DFCC69 /* NextDormUITests */,
 				B42B5E0527FA119A00DFCC69 /* Products */,
+				0F330F5C2DA951EC53600099 /* Pods */,
+				0BF6C15DF16A9F0A116D3E4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +143,12 @@
 			children = (
 				B42B5E0727FA119A00DFCC69 /* AppDelegate.swift */,
 				B42B5E0927FA119A00DFCC69 /* SceneDelegate.swift */,
-				B42B5E0B27FA119A00DFCC69 /* ViewController.swift */,
 				B42B5E0D27FA119A00DFCC69 /* Main.storyboard */,
 				B42B5E1027FA119E00DFCC69 /* Assets.xcassets */,
 				B42B5E1227FA119E00DFCC69 /* LaunchScreen.storyboard */,
 				B42B5E1527FA119E00DFCC69 /* Info.plist */,
+				1D59C52528021421009E40B0 /* LoginViewController.swift */,
+				1D59C52728021440009E40B0 /* FeedViewController.swift */,
 			);
 			path = NextDorm;
 			sourceTree = "<group>";
@@ -134,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B42B5E2E27FA119F00DFCC69 /* Build configuration list for PBXNativeTarget "NextDorm" */;
 			buildPhases = (
+				9DCDC813270348C18BA4E3AE /* [CP] Check Pods Manifest.lock */,
 				B42B5E0027FA119A00DFCC69 /* Sources */,
 				B42B5E0127FA119A00DFCC69 /* Frameworks */,
 				B42B5E0227FA119A00DFCC69 /* Resources */,
+				3ACFF0A81DD908413004C1C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B42B5E3127FA119F00DFCC69 /* Build configuration list for PBXNativeTarget "NextDormTests" */;
 			buildPhases = (
+				A1BB98B0632C09FA699EADBA /* [CP] Check Pods Manifest.lock */,
 				B42B5E1627FA119E00DFCC69 /* Sources */,
 				B42B5E1727FA119E00DFCC69 /* Frameworks */,
 				B42B5E1827FA119E00DFCC69 /* Resources */,
@@ -169,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B42B5E3427FA119F00DFCC69 /* Build configuration list for PBXNativeTarget "NextDormUITests" */;
 			buildPhases = (
+				1AAEBCFF8C7731DE676CC823 /* [CP] Check Pods Manifest.lock */,
 				B42B5E2027FA119F00DFCC69 /* Sources */,
 				B42B5E2127FA119F00DFCC69 /* Frameworks */,
 				B42B5E2227FA119F00DFCC69 /* Resources */,
+				1D37A380455BEA0078A5EBAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,13 +301,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AAEBCFF8C7731DE676CC823 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NextDorm-NextDormUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D37A380455BEA0078A5EBAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NextDorm-NextDormUITests/Pods-NextDorm-NextDormUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NextDorm-NextDormUITests/Pods-NextDorm-NextDormUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NextDorm-NextDormUITests/Pods-NextDorm-NextDormUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ACFF0A81DD908413004C1C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NextDorm/Pods-NextDorm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NextDorm/Pods-NextDorm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NextDorm/Pods-NextDorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DCDC813270348C18BA4E3AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NextDorm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1BB98B0632C09FA699EADBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NextDormTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B42B5E0027FA119A00DFCC69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42B5E0C27FA119A00DFCC69 /* ViewController.swift in Sources */,
+				1D59C52628021421009E40B0 /* LoginViewController.swift in Sources */,
 				B42B5E0827FA119A00DFCC69 /* AppDelegate.swift in Sources */,
+				1D59C52828021440009E40B0 /* FeedViewController.swift in Sources */,
 				B42B5E0A27FA119A00DFCC69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +586,7 @@
 		};
 		B42B5E2F27FA119F00DFCC69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6CFA58AE25B691C0F80C24 /* Pods-NextDorm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +615,7 @@
 		};
 		B42B5E3027FA119F00DFCC69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E28669688DD9B899702A82 /* Pods-NextDorm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +644,7 @@
 		};
 		B42B5E3227FA119F00DFCC69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F1F5014D154CE1FF7C0409 /* Pods-NextDormTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +665,7 @@
 		};
 		B42B5E3327FA119F00DFCC69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5395987E1463B45D795778B8 /* Pods-NextDormTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +686,7 @@
 		};
 		B42B5E3527FA119F00DFCC69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F64020014F1E77F8A1430313 /* Pods-NextDorm-NextDormUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +705,7 @@
 		};
 		B42B5E3627FA119F00DFCC69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8538D4311291B440F6EEDF3 /* Pods-NextDorm-NextDormUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
