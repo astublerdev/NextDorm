@@ -41,11 +41,14 @@ class LoginViewController: UIViewController {
         user.username = usernameField.text
         user.password = passwordField.text
         
-        user.signUpInBackground { (success, error) in
-            if success {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            } else {
-                print("Error: \(error!.localizedDescription)")
+        let csumb = "csumb.edu"
+        if user.email!.suffix(9) == csumb {
+            user.signUpInBackground { (success, error) in
+                if success {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                } else {
+                    print("Error: \(error!.localizedDescription)")
+                }
             }
         }
     }
