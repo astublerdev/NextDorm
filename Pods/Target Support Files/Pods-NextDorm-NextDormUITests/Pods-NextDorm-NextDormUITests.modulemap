@@ -1,0 +1,6 @@
+framework module Pods_NextDorm_NextDormUITests {
+  umbrella header "Pods-NextDorm-NextDormUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
