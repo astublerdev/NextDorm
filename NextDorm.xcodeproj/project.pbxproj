@@ -19,6 +19,7 @@
 		B42B5E1F27FA119E00DFCC69 /* NextDormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E1E27FA119E00DFCC69 /* NextDormTests.swift */; };
 		B42B5E2927FA119F00DFCC69 /* NextDormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E2827FA119F00DFCC69 /* NextDormUITests.swift */; };
 		B42B5E2B27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E2A27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift */; };
+		B45A09662803AA33005A2E65 /* GuidelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A09652803AA33005A2E65 /* GuidelineViewController.swift */; };
 		CBC7C0C5D5F84B0BCCAC14B4 /* Pods_NextDorm_NextDormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB14E81147CFB0C955727885 /* Pods_NextDorm_NextDormUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		B42B5E2427FA119F00DFCC69 /* NextDormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextDormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42B5E2827FA119F00DFCC69 /* NextDormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDormUITests.swift; sourceTree = "<group>"; };
 		B42B5E2A27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDormUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B45A09652803AA33005A2E65 /* GuidelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineViewController.swift; sourceTree = "<group>"; };
 		B8538D4311291B440F6EEDF3 /* Pods-NextDorm-NextDormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm-NextDormUITests.release.xcconfig"; path = "Target Support Files/Pods-NextDorm-NextDormUITests/Pods-NextDorm-NextDormUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9E28669688DD9B899702A82 /* Pods-NextDorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm.release.xcconfig"; path = "Target Support Files/Pods-NextDorm/Pods-NextDorm.release.xcconfig"; sourceTree = "<group>"; };
 		EB14E81147CFB0C955727885 /* Pods_NextDorm_NextDormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextDorm_NextDormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				B42B5E1527FA119E00DFCC69 /* Info.plist */,
 				1D59C52528021421009E40B0 /* LoginViewController.swift */,
 				1D59C52728021440009E40B0 /* FeedViewController.swift */,
+				B45A09652803AA33005A2E65 /* GuidelineViewController.swift */,
 			);
 			path = NextDorm;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				1D59C52628021421009E40B0 /* LoginViewController.swift in Sources */,
 				B42B5E0827FA119A00DFCC69 /* AppDelegate.swift in Sources */,
 				1D59C52828021440009E40B0 /* FeedViewController.swift in Sources */,
+				B45A09662803AA33005A2E65 /* GuidelineViewController.swift in Sources */,
 				B42B5E0A27FA119A00DFCC69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
