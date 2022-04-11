@@ -3,6 +3,9 @@ Project Description
 
 # NextDorm
 
+## Week 1 Progress gif
+<img src='https://github.com/astublerdev/NextDorm/blob/main/NextDormLogin.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
@@ -51,7 +54,6 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
    * Login persists when app is reopened until signout
 - [x] Create Account  - User creates account
    * Must agree to community guidelines
-<img src='https://github.com/astublerdev/NextDorm/blob/main/NextDormLogin.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 - [ ] Register - User signs up with csumb email
    * validate email has csumb
 - [ ] Main Feed - General chatter about housing (complaints, questions, etc.)
