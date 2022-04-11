@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
         if user.email!.suffix(9) == csumb {
             user.signUpInBackground { (success, error) in
                 if success {
-                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                    self.performSegue(withIdentifier: "guidelineSegue", sender: nil)
                 } else {
                     print("Error: \(error!.localizedDescription)")
                 }

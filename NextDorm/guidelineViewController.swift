@@ -1,19 +1,14 @@
 //
-//  FeedViewController.swift
+//  GuidelineViewController.swift
 //  NextDorm
 //
-//  Created by Daisy Rocha on 4/9/22.
+//  Created by Anna S on 4/10/22.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController {
-    
-    
-    @IBAction func signUp(_ sender: Any) {
-        self.performSegue(withIdentifier: "signUpSegue", sender: nil)
-    }
-    
+class GuidelineViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
