@@ -32,7 +32,7 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
 
 **Required Must-have Stories**
 
-* Login - [x] /Logout - [ ]/Create Account - [x]
+* Login/Logout/Create Account
 * General feed
 * Lost and found feed (similar to Instagram with photos and commenting)
 * Roommate Profiles (a feed of people who list where they are looking to live (on campus, off campus) and what they are like (messy, clean, night-owl))
@@ -47,26 +47,26 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
 
 ### 2. Screen Archetypes
 
-* - [x] Login  - User logs into their account
+- [x] Login  - User logs into their account
 	* Login persists when app is reopened until signout
-* Register - User signs up with csumb email
+- [ ] Register - User signs up with csumb email
    * validate email has csumb
-* Main Feed - General chatter about housing (complaints, questions, etc.)
+- [ ] Main Feed - General chatter about housing (complaints, questions, etc.)
    * Allows for commenting and liking posts
    * No images only text
-* Lost and Found
+- [ ] Lost and Found
    * Allows for commenting
-* Lost and Found - Add a Post
+- [ ] Lost and Found - Add a Post
   * Allows user to upload a photo 
-* For Sale
+- [ ] For Sale
    * Similar to the Lost and Found, but for for sale items
-* For Sale - Add a Post
+- [ ] For Sale - Add a Post
   * Allows user to upload a photo 
-* Roommate Profile
+- [ ] Roommate Profile
    * Allows uploading a photo and prompts user to fill out a variety of fields describing themselves
   * Users can like other users’ profiles
   * Users can view who has liked someone’s post
-* Roommate Profile - Add a Post
+- [ ] Roommate Profile - Add a Post
   * Allows uploading a photo and prompts user to fill out a variety of fields describing themselves
  * Checks the user doesn’t already have a profile 
 
