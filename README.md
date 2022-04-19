@@ -56,6 +56,7 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
    * Must agree to community guidelines
 - [x] Register - User signs up with csumb email
    * validate email has csumb
+- [x] Navigation - Tabbed Navigation
 - [ ] Main Feed - General chatter about housing (complaints, questions, etc.)
    * Allows for commenting and liking posts
    * No images only text
