@@ -54,7 +54,7 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
    * Login persists when app is reopened until signout
 - [x] Create Account  - User creates account
    * Must agree to community guidelines
-- [ ] Register - User signs up with csumb email
+- [x] Register - User signs up with csumb email
    * validate email has csumb
 - [ ] Main Feed - General chatter about housing (complaints, questions, etc.)
    * Allows for commenting and liking posts
