@@ -3,6 +3,9 @@ Project Description
 
 # NextDorm
 
+## Week 2 Progress gif
+<img src='https://github.com/astublerdev/NextDorm/blob/main/TabbedNavigation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Week 1 Progress gif
 <img src='https://github.com/astublerdev/NextDorm/blob/main/NextDormLogin.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
