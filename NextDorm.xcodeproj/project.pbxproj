@@ -20,6 +20,9 @@
 		B42B5E2927FA119F00DFCC69 /* NextDormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E2827FA119F00DFCC69 /* NextDormUITests.swift */; };
 		B42B5E2B27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E2A27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift */; };
 		B45A09662803AA33005A2E65 /* GuidelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45A09652803AA33005A2E65 /* GuidelineViewController.swift */; };
+		B48A3B2B280E5F5C00D93DF4 /* LostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A3B2A280E5F5C00D93DF4 /* LostAndFoundViewController.swift */; };
+		B48A3B2D280E5FA500D93DF4 /* BuyAndSellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A3B2C280E5FA500D93DF4 /* BuyAndSellViewController.swift */; };
+		B48A3B2F280E5FC900D93DF4 /* RoomateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A3B2E280E5FC900D93DF4 /* RoomateViewController.swift */; };
 		CBC7C0C5D5F84B0BCCAC14B4 /* Pods_NextDorm_NextDormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB14E81147CFB0C955727885 /* Pods_NextDorm_NextDormUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		B42B5E2827FA119F00DFCC69 /* NextDormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDormUITests.swift; sourceTree = "<group>"; };
 		B42B5E2A27FA119F00DFCC69 /* NextDormUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDormUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B45A09652803AA33005A2E65 /* GuidelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelineViewController.swift; sourceTree = "<group>"; };
+		B48A3B2A280E5F5C00D93DF4 /* LostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundViewController.swift; sourceTree = "<group>"; };
+		B48A3B2C280E5FA500D93DF4 /* BuyAndSellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyAndSellViewController.swift; sourceTree = "<group>"; };
+		B48A3B2E280E5FC900D93DF4 /* RoomateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomateViewController.swift; sourceTree = "<group>"; };
 		B8538D4311291B440F6EEDF3 /* Pods-NextDorm-NextDormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm-NextDormUITests.release.xcconfig"; path = "Target Support Files/Pods-NextDorm-NextDormUITests/Pods-NextDorm-NextDormUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9E28669688DD9B899702A82 /* Pods-NextDorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm.release.xcconfig"; path = "Target Support Files/Pods-NextDorm/Pods-NextDorm.release.xcconfig"; sourceTree = "<group>"; };
 		EB14E81147CFB0C955727885 /* Pods_NextDorm_NextDormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextDorm_NextDormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,12 +152,15 @@
 				B42B5E0727FA119A00DFCC69 /* AppDelegate.swift */,
 				B42B5E0927FA119A00DFCC69 /* SceneDelegate.swift */,
 				B42B5E0D27FA119A00DFCC69 /* Main.storyboard */,
+				B48A3B2C280E5FA500D93DF4 /* BuyAndSellViewController.swift */,
 				B42B5E1027FA119E00DFCC69 /* Assets.xcassets */,
 				B42B5E1227FA119E00DFCC69 /* LaunchScreen.storyboard */,
 				B42B5E1527FA119E00DFCC69 /* Info.plist */,
 				1D59C52528021421009E40B0 /* LoginViewController.swift */,
 				1D59C52728021440009E40B0 /* FeedViewController.swift */,
 				B45A09652803AA33005A2E65 /* GuidelineViewController.swift */,
+				B48A3B2A280E5F5C00D93DF4 /* LostAndFoundViewController.swift */,
+				B48A3B2E280E5FC900D93DF4 /* RoomateViewController.swift */,
 			);
 			path = NextDorm;
 			sourceTree = "<group>";
@@ -412,10 +421,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48A3B2D280E5FA500D93DF4 /* BuyAndSellViewController.swift in Sources */,
 				1D59C52628021421009E40B0 /* LoginViewController.swift in Sources */,
 				B42B5E0827FA119A00DFCC69 /* AppDelegate.swift in Sources */,
 				1D59C52828021440009E40B0 /* FeedViewController.swift in Sources */,
+				B48A3B2F280E5FC900D93DF4 /* RoomateViewController.swift in Sources */,
 				B45A09662803AA33005A2E65 /* GuidelineViewController.swift in Sources */,
+				B48A3B2B280E5F5C00D93DF4 /* LostAndFoundViewController.swift in Sources */,
 				B42B5E0A27FA119A00DFCC69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
