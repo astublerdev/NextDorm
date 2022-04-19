@@ -130,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="29" y="-426"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--General-->
         <scene sceneID="dzy-5a-ueu">
             <objects>
                 <viewController id="Y6x-9k-Y6k" customClass="FeedViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,7 +140,7 @@
                         <viewLayoutGuide key="safeArea" id="t3N-KM-P7C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kRu-gK-a8r"/>
+                    <navigationItem key="navigationItem" title="General" id="kRu-gK-a8r"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9q-Hf-zwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,7 +169,7 @@
             </objects>
             <point key="canvasLocation" x="2333" y="-1432"/>
         </scene>
-        <!--Buy And Sell View Controller-->
+        <!--Buy and Sell-->
         <scene sceneID="QPN-Mu-h0N">
             <objects>
                 <viewController id="6Na-ov-6fx" customClass="BuyAndSellViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,14 +179,14 @@
                         <viewLayoutGuide key="safeArea" id="JYn-iH-FF1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5CL-8E-Aay"/>
+                    <navigationItem key="navigationItem" title="Buy and Sell" id="5CL-8E-Aay"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmA-Lk-QfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3338" y="854"/>
         </scene>
-        <!--Lost And Found View Controller-->
+        <!--Lost and Found-->
         <scene sceneID="ouf-0o-iwg">
             <objects>
                 <viewController id="BQd-cs-ngt" customClass="LostAndFoundViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
@@ -196,14 +196,14 @@
                         <viewLayoutGuide key="safeArea" id="FLG-bc-49p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LYU-VK-13A"/>
+                    <navigationItem key="navigationItem" title="Lost and Found" id="LYU-VK-13A"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJ0-ZG-4Nv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2564" y="854"/>
         </scene>
-        <!--Roomate View Controller-->
+        <!--Roommate-->
         <scene sceneID="a3H-Xx-vpz">
             <objects>
                 <viewController id="Wsq-5R-UxO" customClass="RoomateViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
@@ -213,7 +213,7 @@
                         <viewLayoutGuide key="safeArea" id="bnS-R6-ao9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Zhc-dg-YWF"/>
+                    <navigationItem key="navigationItem" title="Roommate" id="Zhc-dg-YWF"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ4-Lz-NgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
