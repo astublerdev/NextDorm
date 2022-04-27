@@ -65,7 +65,7 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
 - [x] Navigation - Tabbed Navigation
 - [ ] Main Feed - General chatter about housing (complaints, questions, etc.)
    * Allows for commenting and liking posts
-  [x] Display images and text from a database
+  * -[x] Display images and text from a database
 - [x] Main Feed - Add a Post
    * Allows user to upload a photo
 - [ ] Lost and Found
