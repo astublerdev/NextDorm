@@ -10,13 +10,12 @@ import Parse
 import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableView: UITableView!
     
     
     @IBAction func signUp(_ sender: Any) {
         self.performSegue(withIdentifier: "signUpSegue", sender: nil)
     }
-    
-    @IBOutlet weak var tableView: UITableView!
     
     var posts = [PFObject]()
     
@@ -33,7 +32,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let query = PFQuery(className: "Posts")
+        let query = PFQuery(className: "GeneralPost")
         query.includeKey("author")
         query.limit = 100
         
