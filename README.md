@@ -3,6 +3,9 @@ Project Description
 
 # NextDorm
 
+## Week 3 Progress gif
+<img src='https://github.com/astublerdev/NextDorm/blob/main/PostsProgress.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Week 2 Progress gif
 <img src='https://github.com/astublerdev/NextDorm/blob/main/TabbedNavigation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
@@ -62,7 +65,9 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
 - [x] Navigation - Tabbed Navigation
 - [ ] Main Feed - General chatter about housing (complaints, questions, etc.)
    * Allows for commenting and liking posts
-   * No images only text
+  [x] Display images and text from a database
+- [x] Main Feed - Add a Post
+   * Allows user to upload a photo
 - [ ] Lost and Found
    * Allows for commenting
 - [ ] Lost and Found - Add a Post
