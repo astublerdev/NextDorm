@@ -16,34 +16,60 @@ class AddPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     
     @IBAction func onSubmitButton(_ sender: Any) {
-        let theViewController: UIViewController?
-        var post: PFObject?
-        if let navController = self.navigationController, navController.viewControllers.count >= 2 {
-             theViewController = navController.viewControllers[navController.viewControllers.count - 2]
-            if theViewController is LostAndFoundViewController {
-                post = PFObject(className: "LostAndFoundPosts")
-            }
-            else {
-                post = PFObject(className: "GeneralPosts")
-            }
-            post?["description"] = descriptionField.text!
-            post?["author"] = PFUser.current()!
-            
-            let imageData = imageView.image!.pngData()
-            let file = PFFileObject(name: "image.png", data: imageData!)
-            
-            post?["image"] = file
-            
-            post!.saveInBackground { (success, error) in
-                if success {
-                    self.dismiss(animated: true, completion: nil)
-                    print("saved!")
-                } else {
-                    print("error")
-                }
+        let post = PFObject(className: "GeneralPost")
+        post["description"] = descriptionField.text!
+        post["author"] = PFUser.current()!
+        
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(data: imageData!)
+        
+        post["image"] = file
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else {
+                print("error!")
             }
         }
+        
+        
+        
+        
+//        let theViewController: UIViewController?
+//        var post: PFObject?
+//        if let navController = self.navigationController, navController.viewControllers.count >= 2 {
+//             theViewController = navController.viewControllers[navController.viewControllers.count - 2]
+//            if theViewController is LostAndFoundViewController {
+//                post = PFObject(className: "LostAndFoundPosts")
+//            }
+//            else {
+//                post = PFObject(className: "GeneralPosts")
+//            }
+//            post?["description"] = descriptionField.text!
+//            post?["author"] = PFUser.current()!
+//
+//            let imageData = imageView.image!.pngData()
+//            let file = PFFileObject(name: "image.png", data: imageData!)
+//
+//            post?["image"] = file
+//
+//            post!.saveInBackground { (success, error) in
+//                if success {
+//                    self.dismiss(animated: true, completion: nil)
+//                    print("saved!")
+//                } else {
+//                    print("error")
+//                }
+//            }
+//        }
     }
+    
+    @IBAction func onCancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
