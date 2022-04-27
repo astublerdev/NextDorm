@@ -11,6 +11,7 @@
 		1514FE5BA531E2998AF9CF8B /* Pods_NextDormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460527C7E847F1370502B0B /* Pods_NextDormTests.framework */; };
 		1D59C52628021421009E40B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59C52528021421009E40B0 /* LoginViewController.swift */; };
 		1D59C52828021440009E40B0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59C52728021440009E40B0 /* FeedViewController.swift */; };
+		1D8007BD2818F99500FAE988 /* GeneralPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8007BC2818F99500FAE988 /* GeneralPostCell.swift */; };
 		B42B5E0827FA119A00DFCC69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E0727FA119A00DFCC69 /* AppDelegate.swift */; };
 		B42B5E0A27FA119A00DFCC69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B5E0927FA119A00DFCC69 /* SceneDelegate.swift */; };
 		B42B5E0F27FA119A00DFCC69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42B5E0D27FA119A00DFCC69 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		08F1F5014D154CE1FF7C0409 /* Pods-NextDormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDormTests.debug.xcconfig"; path = "Target Support Files/Pods-NextDormTests/Pods-NextDormTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D59C52528021421009E40B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1D59C52728021440009E40B0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		1D8007BC2818F99500FAE988 /* GeneralPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPostCell.swift; sourceTree = "<group>"; };
 		4460527C7E847F1370502B0B /* Pods_NextDormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextDormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5395987E1463B45D795778B8 /* Pods-NextDormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDormTests.release.xcconfig"; path = "Target Support Files/Pods-NextDormTests/Pods-NextDormTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D6CFA58AE25B691C0F80C24 /* Pods-NextDorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm.debug.xcconfig"; path = "Target Support Files/Pods-NextDorm/Pods-NextDorm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				B48A3B2E280E5FC900D93DF4 /* RoomateViewController.swift */,
 				B4C60E9828160387009F4D4E /* AddPostViewController.swift */,
 				B4C60E9A28160E10009F4D4E /* AddForSaleViewController.swift */,
+				1D8007BC2818F99500FAE988 /* GeneralPostCell.swift */,
 			);
 			path = NextDorm;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				B42B5E0827FA119A00DFCC69 /* AppDelegate.swift in Sources */,
 				1D59C52828021440009E40B0 /* FeedViewController.swift in Sources */,
 				B48A3B2F280E5FC900D93DF4 /* RoomateViewController.swift in Sources */,
+				1D8007BD2818F99500FAE988 /* GeneralPostCell.swift in Sources */,
 				B45A09662803AA33005A2E65 /* GuidelineViewController.swift in Sources */,
 				B48A3B2B280E5F5C00D93DF4 /* LostAndFoundViewController.swift in Sources */,
 				B42B5E0A27FA119A00DFCC69 /* SceneDelegate.swift in Sources */,
