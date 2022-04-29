@@ -9,6 +9,7 @@ target 'NextDorm' do
   pod 'Parse'
   pod 'AlamofireImage'
   pod 'MessageInputBar'
+  pod 'DropDown'
 
   target 'NextDormTests' do
     inherit! :search_paths
