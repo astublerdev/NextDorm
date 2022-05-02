@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wsq-5R-UxO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -271,7 +271,7 @@
         <!--Roommate-->
         <scene sceneID="a3H-Xx-vpz">
             <objects>
-                <viewController id="Wsq-5R-UxO" customClass="RoomateViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoomateViewController" id="Wsq-5R-UxO" customClass="RoomateViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UbF-VS-cB5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,14 +285,6 @@
                                     <action selector="tapChooseMenuItem:" destination="Wsq-5R-UxO" eventType="touchUpInside" id="Oe7-iY-OPC"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="bLb-kR-ZWc">
-                                <rect key="frame" x="23" y="135" width="371" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="H9E-Vn-xeg" appends="YES" id="VER-VN-LhB"/>
-                                </connections>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRX-VN-lXq">
                                 <rect key="frame" x="23" y="476" width="25" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -318,6 +310,14 @@
                                     <action selector="onSubmitButton:" destination="Tuz-7d-0dk" eventType="touchUpInside" id="AhT-YX-Pn8"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="JtJ-Oi-txY">
+                                <rect key="frame" x="20" y="105" width="374" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Zt5-Jm-Xwy" appends="YES" id="eSC-9k-MGp"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bnS-R6-ao9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -326,13 +326,12 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descriptionField" destination="02q-uo-eTe" id="cWr-KQ-nsd"/>
-                        <outlet property="imageView" destination="bLb-kR-ZWc" id="H61-z2-ozL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ4-Lz-NgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="H9E-Vn-xeg">
+                <tapGestureRecognizer id="Zt5-Jm-Xwy">
                     <connections>
-                        <action selector="onCameraButton:" destination="Wsq-5R-UxO" id="Xff-Vx-8Nk"/>
+                        <action selector="onCameraButton:" destination="Wsq-5R-UxO" id="uLc-dP-pLy"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
