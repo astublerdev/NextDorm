@@ -221,7 +221,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <tabBarAppearance key="standardAppearance"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="IiX-fb-mWt" kind="relationship" relationship="viewControllers" id="K7F-5r-lCM"/>
@@ -601,11 +603,16 @@
         <scene sceneID="iCX-G4-vhq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IiX-fb-mWt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="General" selectedImage="General" id="e4L-lC-4zz"/>
+                    <tabBarItem key="tabBarItem" title="" image="General" selectedImage="General" id="e4L-lC-4zz">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qc9-Xf-7PD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -620,11 +627,16 @@
         <scene sceneID="NHN-07-W1o">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j8d-so-lTG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="LostAndFound" selectedImage="LostAndFound" id="NZh-xi-g5o"/>
+                    <tabBarItem key="tabBarItem" title="" image="LostAndFound" selectedImage="LostAndFound" id="NZh-xi-g5o">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FM8-qH-yQm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -639,11 +651,16 @@
         <scene sceneID="X7H-cU-wR6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NDd-au-fB2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="BuyandSell" selectedImage="BuyandSell" id="NFE-bD-Lo1"/>
+                    <tabBarItem key="tabBarItem" title="" image="BuyandSell" selectedImage="BuyandSell" id="NFE-bD-Lo1">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uZT-9f-PqA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -658,11 +675,16 @@
         <scene sceneID="dnh-HD-dMq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fp9-A2-WeI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Roomate" selectedImage="Roomate" id="XDs-qL-6LU"/>
+                    <tabBarItem key="tabBarItem" title="" image="Roomate" selectedImage="Roomate" id="XDs-qL-6LU">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ivg-PD-AXM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -738,7 +760,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Db-S6-JN0"/>
+        <segue reference="XJY-Y0-0a2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BuyandSell" width="25" height="25"/>
