@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -244,12 +244,41 @@
                         <viewLayoutGuide key="safeArea" id="JYn-iH-FF1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Buy and Sell" id="5CL-8E-Aay"/>
+                    <navigationItem key="navigationItem" title="Buy and Sell" id="5CL-8E-Aay">
+                        <barButtonItem key="rightBarButtonItem" image="add_post" id="7jP-8c-AG1">
+                            <connections>
+                                <segue destination="S3D-g4-Dx8" kind="presentation" id="PIA-cU-50h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmA-Lk-QfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3338" y="854"/>
+        </scene>
+        <!--Roommate-->
+        <scene sceneID="5Q4-vU-zQe">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Ro8-QS-tJo" customClass="RoommateViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vS0-sc-PeW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="elU-cg-R47"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Roommate" id="Ayl-VJ-RNp">
+                        <barButtonItem key="rightBarButtonItem" image="add_post" id="08g-vi-RPv">
+                            <connections>
+                                <segue destination="Wsq-5R-UxO" kind="presentation" id="yXm-QU-zVi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2F-3T-uqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4187" y="854"/>
         </scene>
         <!--Lost and Found-->
         <scene sceneID="ouf-0o-iwg">
@@ -261,30 +290,74 @@
                         <viewLayoutGuide key="safeArea" id="FLG-bc-49p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Lost and Found" id="LYU-VK-13A"/>
+                    <navigationItem key="navigationItem" title="Lost and Found" id="LYU-VK-13A">
+                        <barButtonItem key="rightBarButtonItem" image="add_post" id="OMo-9C-yX4">
+                            <connections>
+                                <segue destination="UcH-4f-aR3" kind="presentation" id="b4t-Hi-F0l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJ0-ZG-4Nv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2564" y="854"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="sDU-Vz-AtY">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="S3D-g4-Dx8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ncT-Ks-bap">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yQ8-UN-Lmm">
+                                <rect key="frame" x="18" y="115" width="374" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-lo-Zed">
+                                <rect key="frame" x="18" y="401" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwx-Eb-FrO">
+                                <rect key="frame" x="18" y="456" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZII-2x-JmD">
+                                <rect key="frame" x="20" y="506" width="372" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BWX-Ns-RVO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64b-ak-7VE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3337.68115942029" y="1573.6607142857142"/>
+        </scene>
         <!--Roommate-->
         <scene sceneID="a3H-Xx-vpz">
             <objects>
-                <viewController storyboardIdentifier="RoomateViewController" id="Wsq-5R-UxO" customClass="RoomateViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Wsq-5R-UxO" customClass="AddRoomateViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UbF-VS-cB5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiT-cX-4Xo">
-                                <rect key="frame" x="23" y="382" width="171" height="55"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="bLb-kR-ZWc">
+                                <rect key="frame" x="18" y="115" width="374" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Desired Location"/>
+                                <gestureRecognizers/>
                                 <connections>
-                                    <action selector="tapChooseMenuItem:" destination="Wsq-5R-UxO" eventType="touchUpInside" id="Oe7-iY-OPC"/>
+                                    <outletCollection property="gestureRecognizers" destination="H9E-Vn-xeg" appends="YES" id="VER-VN-LhB"/>
                                 </connections>
-                            </button>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRX-VN-lXq">
                                 <rect key="frame" x="23" y="476" width="25" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -310,14 +383,24 @@
                                     <action selector="onSubmitButton:" destination="Tuz-7d-0dk" eventType="touchUpInside" id="AhT-YX-Pn8"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="JtJ-Oi-txY">
-                                <rect key="frame" x="20" y="105" width="374" height="242"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9A-JL-dAk">
+                                <rect key="frame" x="23" y="718" width="370" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Zt5-Jm-Xwy" appends="YES" id="eSC-9k-MGp"/>
+                                    <action selector="onCancelBtn:" destination="Wsq-5R-UxO" eventType="touchUpInside" id="P8u-cg-g4v"/>
                                 </connections>
-                            </imageView>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiT-cX-4Xo">
+                                <rect key="frame" x="23" y="394" width="171" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Desired Location"/>
+                                <connections>
+                                    <action selector="tapChooseMenuItem:" destination="Wsq-5R-UxO" eventType="touchUpInside" id="Oe7-iY-OPC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bnS-R6-ao9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -326,16 +409,56 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descriptionField" destination="02q-uo-eTe" id="cWr-KQ-nsd"/>
+                        <outlet property="imageView" destination="bLb-kR-ZWc" id="H61-z2-ozL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ4-Lz-NgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Zt5-Jm-Xwy">
+                <tapGestureRecognizer id="H9E-Vn-xeg">
                     <connections>
-                        <action selector="onCameraButton:" destination="Wsq-5R-UxO" id="uLc-dP-pLy"/>
+                        <action selector="onCameraButton:" destination="Wsq-5R-UxO" id="Xff-Vx-8Nk"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4186.9565217391309" y="853.79464285714278"/>
+            <point key="canvasLocation" x="4186.9565217391309" y="1573.6607142857142"/>
+        </scene>
+        <!--Add Lost Found View Controller-->
+        <scene sceneID="msn-NB-TKV">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="UcH-4f-aR3" customClass="AddLostFoundViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zkk-1R-ixa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3o3-p6-FbK">
+                                <rect key="frame" x="18" y="115" width="374" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9l-Ev-JA3">
+                                <rect key="frame" x="18" y="395" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jio-JD-naI">
+                                <rect key="frame" x="20" y="454" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-Yv-4VC">
+                                <rect key="frame" x="20" y="508" width="372" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PkX-ox-8fR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXC-1P-GPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2562.3188405797105" y="1573.6607142857142"/>
         </scene>
         <!--Add Post View Controller-->
         <scene sceneID="0pm-o9-lhY">
@@ -465,7 +588,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Wsq-5R-UxO" kind="relationship" relationship="rootViewController" id="Q68-Cr-k7t"/>
+                        <segue destination="Ro8-QS-tJo" kind="relationship" relationship="rootViewController" id="jtj-PI-8f8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVj-6g-eTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -533,11 +656,11 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3338" y="1574"/>
+            <point key="canvasLocation" x="5620" y="854"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XJY-Y0-0a2"/>
+        <segue reference="9Db-S6-JN0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BuyandSell" width="25" height="25"/>
