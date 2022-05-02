@@ -1,5 +1,5 @@
 //
-//  RoommateProfileCell.swift
+//  ProfileCell.swift
 //  NextDorm
 //
 //  Created by Anna S on 5/2/22.
@@ -7,17 +7,18 @@
 
 import UIKit
 
-class RoommateProfileCell: UITableViewCell {
+class ProfileCell: UITableViewCell {
 
     
-   
-    @IBOutlet weak var photoView: UIImageView!
     
-    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
     
-    @IBOutlet weak var perferredHousingLabel: UILabel!
+    @IBOutlet weak var username: UILabel!
     
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var preferredHousing: UILabel!
+    
+    @IBOutlet weak var bio: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

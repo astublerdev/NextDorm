@@ -10,7 +10,7 @@ import Parse
 import AlamofireImage
 
 class RoommateFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
-
+    
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -46,22 +46,23 @@ class RoommateFeedViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RoommateProfileCell") as! RoommateProfileCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell") as! ProfileCell
+
         
         let post = posts[indexPath.row]
         
         let user = post["author"] as! PFUser
-        cell.usernameLabel.text = user.username
+        cell.username.text = user.username
         
-        cell.descriptionLabel.text = post["description"] as! String
+        cell.bio.text = post["description"] as? String
         
-        cell.perferredHousingLabel.text = post["location"] as! String
+        cell.preferredHousing.text = post["location"] as? String
         
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         
-        cell.photoView.af_setImage(withURL: url)
+        cell.profileImage.af_setImage(withURL: url)
         
         return cell
     }
