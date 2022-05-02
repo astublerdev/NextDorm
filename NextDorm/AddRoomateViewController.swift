@@ -23,7 +23,6 @@ class AddRoomateViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var imageView: UIImageView!
     
 
-
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
@@ -50,8 +49,6 @@ class AddRoomateViewController: UIViewController, UIImagePickerControllerDelegat
         dismiss(animated: true, completion: nil)
     }
     
-    
-
     @IBAction func tapChooseMenuItem(_ sender: Any) {
         dropDown.dataSource = ["Residence Halls", "Strawberry Apartments", "Vineyard or Pinnacles", "Promontory", "East Campus"]//4
         dropDown.anchorView = sender as! AnchorView
