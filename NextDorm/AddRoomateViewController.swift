@@ -1,5 +1,5 @@
 //
-//  RoomateViewController.swift
+//  AddRoomateViewController.swift
 //  NextDorm
 //
 //  Created by Anna S on 4/18/22.
@@ -10,7 +10,7 @@ import DropDown
 import AlamofireImage
 import Parse
 
-class RoomateViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddRoomateViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let dropDown = DropDown()
 
@@ -81,9 +81,11 @@ class RoomateViewController: UIViewController, UIImagePickerControllerDelegate, 
                 print("error")
             }
         }
-        
     }
     
+    @IBAction func onCancelBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
