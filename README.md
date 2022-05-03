@@ -45,8 +45,8 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
 
 * Login/Logout/Create Account
 * General feed
-* Lost and found feed (similar to Instagram with photos and commenting)
-* Roommate Profiles (a feed of people who list where they are looking to live (on campus, off campus) and what they are like (messy, clean, night-owl))
+* Lost and found feed
+* Roommate Profiles (a feed of people who list where they are looking to live and what they are like (messy, clean, night-owl))
 
 **Optional Nice-to-have Stories**
 * Settings
