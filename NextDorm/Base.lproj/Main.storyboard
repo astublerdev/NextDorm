@@ -221,7 +221,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <tabBarAppearance key="standardAppearance"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="IiX-fb-mWt" kind="relationship" relationship="viewControllers" id="K7F-5r-lCM"/>
@@ -260,10 +262,85 @@
         <!--Roommate-->
         <scene sceneID="5Q4-vU-zQe">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ro8-QS-tJo" customClass="RoommateViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Ro8-QS-tJo" customClass="RoommateFeedViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vS0-sc-PeW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Urr-2T-pOa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="433" id="OHy-1g-Q5l" customClass="ProfileCell" customModule="NextDorm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="433"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OHy-1g-Q5l" id="z5u-am-esu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="433"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vjv-LL-f3A">
+                                                    <rect key="frame" x="8" y="8" width="398" height="322"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="322" id="8xg-M4-4e4"/>
+                                                        <constraint firstAttribute="width" secondItem="Vjv-LL-f3A" secondAttribute="height" multiplier="199:161" id="MRz-dh-3c1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-v7-04n">
+                                                    <rect key="frame" x="8" y="338" width="398" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="195-YV-1W1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preferred Housing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g18-m6-ALW">
+                                                    <rect key="frame" x="8" y="367" width="398" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="W8x-JO-iPI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhT-zN-IeL">
+                                                    <rect key="frame" x="8" y="396" width="398" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ZYo-y3-c3y"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Vjv-LL-f3A" secondAttribute="trailing" constant="8" id="4rV-cd-ND6"/>
+                                                <constraint firstAttribute="trailing" secondItem="fJl-v7-04n" secondAttribute="trailing" constant="8" id="BY3-Nv-xRK"/>
+                                                <constraint firstItem="hhT-zN-IeL" firstAttribute="leading" secondItem="z5u-am-esu" secondAttribute="leading" constant="8" id="IeT-0g-X3P"/>
+                                                <constraint firstItem="g18-m6-ALW" firstAttribute="leading" secondItem="z5u-am-esu" secondAttribute="leading" constant="8" id="SbK-ej-78e"/>
+                                                <constraint firstAttribute="trailing" secondItem="g18-m6-ALW" secondAttribute="trailing" constant="8" id="XIN-dI-GAw"/>
+                                                <constraint firstItem="fJl-v7-04n" firstAttribute="top" secondItem="Vjv-LL-f3A" secondAttribute="bottom" constant="8" id="ZMN-ei-Xfq"/>
+                                                <constraint firstItem="Vjv-LL-f3A" firstAttribute="top" secondItem="z5u-am-esu" secondAttribute="top" constant="8" id="aTG-ZH-YJP"/>
+                                                <constraint firstItem="fJl-v7-04n" firstAttribute="top" secondItem="Vjv-LL-f3A" secondAttribute="bottom" constant="8" id="eL9-Cr-17q"/>
+                                                <constraint firstItem="hhT-zN-IeL" firstAttribute="top" secondItem="g18-m6-ALW" secondAttribute="bottom" constant="8" id="h9M-4u-qEc"/>
+                                                <constraint firstItem="Vjv-LL-f3A" firstAttribute="leading" secondItem="z5u-am-esu" secondAttribute="leading" constant="8" id="lDL-sY-J5Y"/>
+                                                <constraint firstItem="g18-m6-ALW" firstAttribute="top" secondItem="fJl-v7-04n" secondAttribute="bottom" constant="8" id="sY1-Yz-W95"/>
+                                                <constraint firstAttribute="bottom" secondItem="hhT-zN-IeL" secondAttribute="bottom" constant="8" id="syy-dP-d9f"/>
+                                                <constraint firstItem="fJl-v7-04n" firstAttribute="leading" secondItem="z5u-am-esu" secondAttribute="leading" constant="8" id="uWS-Gf-ReD"/>
+                                                <constraint firstAttribute="trailing" secondItem="hhT-zN-IeL" secondAttribute="trailing" constant="8" id="vvL-kJ-4El"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bio" destination="hhT-zN-IeL" id="6GQ-Mn-oLr"/>
+                                            <outlet property="preferredHousing" destination="g18-m6-ALW" id="gA7-Il-tYI"/>
+                                            <outlet property="profileImage" destination="Vjv-LL-f3A" id="rak-yZ-6Qa"/>
+                                            <outlet property="username" destination="fJl-v7-04n" id="OUj-Im-cNZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="elU-cg-R47"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -275,10 +352,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Urr-2T-pOa" id="dfP-RP-hev"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2F-3T-uqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4187" y="854"/>
+            <point key="canvasLocation" x="4186.9565217391309" y="853.79464285714278"/>
         </scene>
         <!--Lost and Found-->
         <scene sceneID="ouf-0o-iwg">
@@ -409,6 +489,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descriptionField" destination="02q-uo-eTe" id="cWr-KQ-nsd"/>
+                        <outlet property="imageView" destination="xwK-ie-g4M" id="OyV-cA-PMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ4-Lz-NgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -522,11 +603,16 @@
         <scene sceneID="iCX-G4-vhq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IiX-fb-mWt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="General" selectedImage="General" id="e4L-lC-4zz"/>
+                    <tabBarItem key="tabBarItem" title="" image="General" selectedImage="General" id="e4L-lC-4zz">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qc9-Xf-7PD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -541,11 +627,16 @@
         <scene sceneID="NHN-07-W1o">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j8d-so-lTG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="LostAndFound" selectedImage="LostAndFound" id="NZh-xi-g5o"/>
+                    <tabBarItem key="tabBarItem" title="" image="LostAndFound" selectedImage="LostAndFound" id="NZh-xi-g5o">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FM8-qH-yQm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -560,11 +651,16 @@
         <scene sceneID="X7H-cU-wR6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NDd-au-fB2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="BuyandSell" selectedImage="BuyandSell" id="NFE-bD-Lo1"/>
+                    <tabBarItem key="tabBarItem" title="" image="BuyandSell" selectedImage="BuyandSell" id="NFE-bD-Lo1">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uZT-9f-PqA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -579,11 +675,16 @@
         <scene sceneID="dnh-HD-dMq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fp9-A2-WeI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Roomate" selectedImage="Roomate" id="XDs-qL-6LU"/>
+                    <tabBarItem key="tabBarItem" title="" image="Roomate" selectedImage="Roomate" id="XDs-qL-6LU">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ivg-PD-AXM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -659,7 +760,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Db-S6-JN0"/>
+        <segue reference="XJY-Y0-0a2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BuyandSell" width="25" height="25"/>

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		14748BC74E56A0981AC6DBE4 /* Pods_NextDorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E25D14F002A9818181B44A9 /* Pods_NextDorm.framework */; };
 		1514FE5BA531E2998AF9CF8B /* Pods_NextDormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460527C7E847F1370502B0B /* Pods_NextDormTests.framework */; };
-		1D0AC429281CE8D400D38A2A /* RoommateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AC428281CE8D400D38A2A /* RoommateViewController.swift */; };
+		1D0AC429281CE8D400D38A2A /* RoommateFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AC428281CE8D400D38A2A /* RoommateFeedViewController.swift */; };
 		1D0AC42C281CE99A00D38A2A /* AddLostFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AC42B281CE99A00D38A2A /* AddLostFoundViewController.swift */; };
 		1D0AC42E281CE9CC00D38A2A /* AddBuySellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AC42D281CE9CC00D38A2A /* AddBuySellViewController.swift */; };
 		1D59C52628021421009E40B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59C52528021421009E40B0 /* LoginViewController.swift */; };
@@ -27,6 +27,7 @@
 		B48A3B2B280E5F5C00D93DF4 /* LostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A3B2A280E5F5C00D93DF4 /* LostAndFoundViewController.swift */; };
 		B48A3B2D280E5FA500D93DF4 /* BuyAndSellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A3B2C280E5FA500D93DF4 /* BuyAndSellViewController.swift */; };
 		B48A3B2F280E5FC900D93DF4 /* AddRoomateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A3B2E280E5FC900D93DF4 /* AddRoomateViewController.swift */; };
+		B495DFF52820899A00736ACA /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495DFF42820899A00736ACA /* ProfileCell.swift */; };
 		B4C60E9928160387009F4D4E /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C60E9828160387009F4D4E /* AddPostViewController.swift */; };
 		B4C60E9B28160E10009F4D4E /* AddForSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C60E9A28160E10009F4D4E /* AddForSaleViewController.swift */; };
 		CBC7C0C5D5F84B0BCCAC14B4 /* Pods_NextDorm_NextDormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB14E81147CFB0C955727885 /* Pods_NextDorm_NextDormUITests.framework */; };
@@ -51,7 +52,7 @@
 
 /* Begin PBXFileReference section */
 		08F1F5014D154CE1FF7C0409 /* Pods-NextDormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDormTests.debug.xcconfig"; path = "Target Support Files/Pods-NextDormTests/Pods-NextDormTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1D0AC428281CE8D400D38A2A /* RoommateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommateViewController.swift; sourceTree = "<group>"; };
+		1D0AC428281CE8D400D38A2A /* RoommateFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommateFeedViewController.swift; sourceTree = "<group>"; };
 		1D0AC42B281CE99A00D38A2A /* AddLostFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLostFoundViewController.swift; sourceTree = "<group>"; };
 		1D0AC42D281CE9CC00D38A2A /* AddBuySellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBuySellViewController.swift; sourceTree = "<group>"; };
 		1D59C52528021421009E40B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		B48A3B2A280E5F5C00D93DF4 /* LostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundViewController.swift; sourceTree = "<group>"; };
 		B48A3B2C280E5FA500D93DF4 /* BuyAndSellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyAndSellViewController.swift; sourceTree = "<group>"; };
 		B48A3B2E280E5FC900D93DF4 /* AddRoomateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomateViewController.swift; sourceTree = "<group>"; };
+		B495DFF42820899A00736ACA /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		B4C60E9828160387009F4D4E /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		B4C60E9A28160E10009F4D4E /* AddForSaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForSaleViewController.swift; sourceTree = "<group>"; };
 		B8538D4311291B440F6EEDF3 /* Pods-NextDorm-NextDormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextDorm-NextDormUITests.release.xcconfig"; path = "Target Support Files/Pods-NextDorm-NextDormUITests/Pods-NextDorm-NextDormUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,9 +178,10 @@
 				B4C60E9828160387009F4D4E /* AddPostViewController.swift */,
 				B4C60E9A28160E10009F4D4E /* AddForSaleViewController.swift */,
 				1D8007BC2818F99500FAE988 /* GeneralPostCell.swift */,
-				1D0AC428281CE8D400D38A2A /* RoommateViewController.swift */,
+				1D0AC428281CE8D400D38A2A /* RoommateFeedViewController.swift */,
 				1D0AC42B281CE99A00D38A2A /* AddLostFoundViewController.swift */,
 				1D0AC42D281CE9CC00D38A2A /* AddBuySellViewController.swift */,
+				B495DFF42820899A00736ACA /* ProfileCell.swift */,
 			);
 			path = NextDorm;
 			sourceTree = "<group>";
@@ -441,13 +444,14 @@
 			files = (
 				B48A3B2D280E5FA500D93DF4 /* BuyAndSellViewController.swift in Sources */,
 				1D0AC42E281CE9CC00D38A2A /* AddBuySellViewController.swift in Sources */,
-				1D0AC429281CE8D400D38A2A /* RoommateViewController.swift in Sources */,
+				1D0AC429281CE8D400D38A2A /* RoommateFeedViewController.swift in Sources */,
 				B4C60E9928160387009F4D4E /* AddPostViewController.swift in Sources */,
 				1D59C52628021421009E40B0 /* LoginViewController.swift in Sources */,
 				1D0AC42C281CE99A00D38A2A /* AddLostFoundViewController.swift in Sources */,
 				B4C60E9B28160E10009F4D4E /* AddForSaleViewController.swift in Sources */,
 				B42B5E0827FA119A00DFCC69 /* AppDelegate.swift in Sources */,
 				1D59C52828021440009E40B0 /* FeedViewController.swift in Sources */,
+				B495DFF52820899A00736ACA /* ProfileCell.swift in Sources */,
 				B48A3B2F280E5FC900D93DF4 /* AddRoomateViewController.swift in Sources */,
 				1D8007BD2818F99500FAE988 /* GeneralPostCell.swift in Sources */,
 				B45A09662803AA33005A2E65 /* GuidelineViewController.swift in Sources */,

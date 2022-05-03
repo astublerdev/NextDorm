@@ -12,49 +12,14 @@ import Parse
 
 class AddRoomateViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    let dropDown = DropDown()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var descriptionField: UITextView!
     
-
-
-    @IBAction func onCameraButton(_ sender: Any) {
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.allowsEditing = true
-        
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            picker.sourceType = .camera
-        } else {
-            picker.sourceType = .photoLibrary
-        }
-        
-        present(picker, animated: true, completion: nil)
-    }
+    let dropDown = DropDown()
     
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[.editedImage] as! UIImage
-        
-        let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af_imageAspectScaled(toFill: size)
-        
-        imageView.image = scaledImage
-        
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-
     @IBAction func tapChooseMenuItem(_ sender: Any) {
         dropDown.dataSource = ["Residence Halls", "Strawberry Apartments", "Vineyard or Pinnacles", "Promontory", "East Campus"]//4
-        dropDown.anchorView = sender as! AnchorView
+        dropDown.anchorView = sender as? AnchorView
         dropDown.bottomOffset = CGPoint(x: 0, y: (sender as AnyObject).frame.size.height)
         dropDown.show()
         dropDown.selectionAction = { [weak self] (index: Int, item: String) in //8
@@ -62,8 +27,6 @@ class AddRoomateViewController: UIViewController, UIImagePickerControllerDelegat
             (sender as AnyObject).setTitle(item, for: .normal)
         }
     }
-    
-    @IBOutlet weak var descriptionField: UITextView!
     
     @IBAction func onSubmitButton(_ sender: Any) {
         let post = PFObject(className: "Profile")
@@ -89,6 +52,38 @@ class AddRoomateViewController: UIViewController, UIImagePickerControllerDelegat
     @IBAction func onCancelBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    @IBAction func onCameraButton(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+        
+        present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+        
+        let size = CGSize(width: 300, height: 300)
+        let scaledImage = image.af_imageAspectScaled(toFill: size)
+        
+        imageView.image = scaledImage
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
