@@ -249,7 +249,7 @@
                     <navigationItem key="navigationItem" title="Buy and Sell" id="5CL-8E-Aay">
                         <barButtonItem key="rightBarButtonItem" image="add_post" id="7jP-8c-AG1">
                             <connections>
-                                <segue destination="dXN-1B-Ys1" kind="presentation" id="wqX-Uj-lsT"/>
+                                <segue destination="9Bh-0y-lRU" kind="presentation" id="5UV-IL-Qck"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -470,10 +470,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3o3-p6-FbK">
-                                <rect key="frame" x="18" y="115" width="374" height="242"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9l-Ev-JA3">
                                 <rect key="frame" x="18" y="395" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -485,21 +481,118 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="UcH-4f-aR3" eventType="touchUpInside" id="b0Q-1z-Wpv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-Yv-4VC">
                                 <rect key="frame" x="20" y="508" width="372" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <action selector="onCancelButton:" destination="MZu-cN-sKl" eventType="touchUpInside" id="clS-zI-Yvl"/>
+                                    <action selector="onCancelButton:" destination="UcH-4f-aR3" eventType="touchUpInside" id="yOV-bn-HCA"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="3o3-p6-FbK">
+                                <rect key="frame" x="18" y="115" width="374" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5c1-WE-DlD" appends="YES" id="uFf-gf-2bd"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PkX-ox-8fR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="B9l-Ev-JA3" id="hLN-ff-TNc"/>
+                        <outlet property="imageView" destination="3o3-p6-FbK" id="vxP-Jb-2mm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXC-1P-GPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="MZu-cN-sKl" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="5c1-WE-DlD">
+                    <connections>
+                        <action selector="onCameraButton:" destination="UcH-4f-aR3" id="8BX-Xy-MFt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2562.3188405797105" y="1573.6607142857142"/>
+        </scene>
+        <!--Add Buy Sell View Controller-->
+        <scene sceneID="o5C-QT-Igy">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="9Bh-0y-lRU" customClass="AddBuySellViewController" customModule="NextDorm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkP-jz-dNI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="mDy-bS-K9Y">
+                                <rect key="frame" x="18" y="115" width="374" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jFP-ar-xI3" appends="YES" id="I20-WO-o3w"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a7n-6d-Olb">
+                                <rect key="frame" x="18" y="393" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ7-gG-0lb">
+                                <rect key="frame" x="18" y="516" width="376" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="9Bh-0y-lRU" eventType="touchUpInside" id="CrY-bs-7LW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bl-js-OmH">
+                                <rect key="frame" x="18" y="564" width="376" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <action selector="onCancelButton:" destination="9Bh-0y-lRU" eventType="touchUpInside" id="qsp-5F-Hel"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euh-hO-s9E">
+                                <rect key="frame" x="20" y="447" width="77" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="59k-lJ-aWX">
+                                <rect key="frame" x="93" y="447" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ic3-R2-hU7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="a7n-6d-Olb" id="5Re-h3-TQt"/>
+                        <outlet property="imageView" destination="mDy-bS-K9Y" id="xPr-4m-U8h"/>
+                        <outlet property="priceField" destination="59k-lJ-aWX" id="U0F-P9-hqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSW-PJ-Bn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jFP-ar-xI3">
+                    <connections>
+                        <action selector="onCameraButton:" destination="9Bh-0y-lRU" id="w3s-K6-soD"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3337.68115942029" y="1573.6607142857142"/>
         </scene>
         <!--Add Post View Controller-->
         <scene sceneID="0pm-o9-lhY">
@@ -656,78 +749,9 @@
             </objects>
             <point key="canvasLocation" x="4188" y="123"/>
         </scene>
-        <!--Add Buy Sale View Controller-->
-        <scene sceneID="SHE-qN-wA3">
-            <objects>
-                <viewController storyboardIdentifier="AddForSaleViewController" modalPresentationStyle="fullScreen" id="dXN-1B-Ys1" customClass="AddBuySaleViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lca-Mz-Pgc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="pYS-d2-DZk">
-                                <rect key="frame" x="20" y="115" width="374" height="242"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Uuw-M4-7iY" appends="YES" id="cMw-DM-BOK"/>
-                                </connections>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCz-eQ-ipj" userLabel="Description">
-                                <rect key="frame" x="20" y="397" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqQ-nz-dIA">
-                                <rect key="frame" x="297" y="450" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWE-wb-dYy">
-                                <rect key="frame" x="20" y="520" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
-                                <connections>
-                                    <action selector="onSubmitButton:" destination="dXN-1B-Ys1" eventType="touchUpInside" id="AfF-ja-2wT"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abn-Wp-dAH">
-                                <rect key="frame" x="232" y="463" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-4g-hyz">
-                                <rect key="frame" x="20" y="559" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="MA5-ME-svM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <outlet property="descriptionField" destination="WCz-eQ-ipj" id="CKh-Q2-gvL"/>
-                        <outlet property="imageView" destination="pYS-d2-DZk" id="a62-Eg-iFr"/>
-                        <outlet property="priceField" destination="zqQ-nz-dIA" id="jgC-bY-sZm"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fUT-2X-ejh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Uuw-M4-7iY">
-                    <connections>
-                        <action selector="onCameraButton:" destination="dXN-1B-Ys1" id="9uY-2R-pza"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="3337.68115942029" y="1573.6607142857142"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XJY-Y0-0a2"/>
+        <segue reference="9Db-S6-JN0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BuyandSell" width="25" height="25"/>
