@@ -2,6 +2,8 @@ Project Description
 ===
 
 # NextDorm
+## Week 4 Progress gif
+<img src='https://github.com/astublerdev/NextDorm/blob/main/FinalUpdate.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Week 3 Progress gif
 <img src='https://github.com/astublerdev/NextDorm/blob/main/PostsProgress.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
@@ -45,8 +47,6 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
 * General feed
 * Lost and found feed (similar to Instagram with photos and commenting)
 * Roommate Profiles (a feed of people who list where they are looking to live (on campus, off campus) and what they are like (messy, clean, night-owl))
-	* Users can like other users profiles
-	* Clicking on the likes shows a list of people who have liked the profile
 
 **Optional Nice-to-have Stories**
 * Settings
@@ -57,32 +57,27 @@ An application similar to NextDoor and MyRaft’s feed function, but for on camp
 ### 2. Screen Archetypes
 
 - [x] Login  - User logs into their account
-   * Login persists when app is reopened until signout
 - [x] Create Account  - User creates account
-   * Must agree to community guidelines
+   * -[x] Must agree to community guidelines
 - [x] Register - User signs up with csumb email
    * validate email has csumb
 - [x] Navigation - Tabbed Navigation
-- [ ] Main Feed - General chatter about housing (complaints, questions, etc.)
-   * Allows for commenting and liking posts
+- [x] Main Feed - General chatter about housing (complaints, questions, etc.)
   * -[x] Display images and text from a database
 - [x] Main Feed - Add a Post
-   * Allows user to upload a photo
-- [ ] Lost and Found
-   * Allows for commenting
-- [ ] Lost and Found - Add a Post
+   * -[x] Allows user to upload a photo
+- [x] Lost and Found
+   * -[x] Display images and text from a database
+- [x] Lost and Found - Add a Post
    * Allows user to upload a photo 
-- [ ] For Sale
-   * Similar to the Lost and Found, but for for sale items
-- [ ] For Sale - Add a Post
-   * Allows user to upload a photo 
-- [ ] Roommate Profile
-   * Allows uploading a photo and prompts user to fill out a variety of fields describing themselves
-   * Users can like other users’ profiles
-   * Users can view who has liked someone’s post
-- [ ] Roommate Profile - Add a Post
-  * Allows uploading a photo and prompts user to fill out a variety of fields describing themselves
-  * Checks the user doesn’t already have a profile 
+- [x] For Sale
+   * -[x] Display images and text from a database
+- [x] For Sale - Add a Post
+   * -[x] Allows user to upload a photo 
+- [x] Roommate Profile
+   * -[x] Allows viewing people's profiles
+- [x] Roommate Profile - Add a Post
+  * -[x] Allows uploading a photo and prompts user to fill out information describing themselves
 
 ### 3. Navigation
 
@@ -102,7 +97,6 @@ Optional:
 * Lost and Found -> Add a Post
 * For Sale -> Add a Post
 * Roommate Profile -> Add a Post
-* Roommate Profile -> List of Likes
 
 ## Wireframes
 <img src='https://github.com/astublerdev/NextDorm/blob/main/Wireframe.jpg' title='Wireframes' width='' alt='Wireframes' />
@@ -145,8 +139,6 @@ Check back soon
    | author        | Pointer to User| post author |
    | image         | File     | image that user posts |
    | caption       | String   | image caption by author |
-   | comments      | Array    | list of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
    | createdAt     | DateTime | date when post is created (default field) |
    | updatedAt     | DateTime | date when post is last updated (default field) |
 
@@ -160,23 +152,11 @@ Check back soon
    | createdAt     | DateTime | date when user is created (default field) |
    | updatedAt     | DateTime | date when user is last updated (default field) |
    
-#### Comments
-   | Property      | Type     | Description |
-   | ------------- | -------- | ------------|
-   | post          | Pointer to User| comment author |
-   | author        | Pointer to User| image author |
-   | text          | String   | text  |
-   | createdAt     | DateTime | date when user is created (default field) |
-   | updatedAt     | DateTime | date when user is last updated (default field) |
 ### Networking
 #### List of network requests by screen
    - Home Feed Screen, For Sale Screen, Lost & Found Screen, Roommates
       - (Read/GET) Query all posts sorted by most recent
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
-   - Create Post Screens
+   - Create Post Screens = Home Feed Screen, For Sale Screen, Lost & Found Screen, Roommates
       - (Create/POST) Create a new post object
 
 
